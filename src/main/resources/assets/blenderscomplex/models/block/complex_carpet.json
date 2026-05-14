@@ -1,0 +1,6 @@
+{
+  "parent": "block/generated",
+  "textures": {
+    "layer0": "blenderscomplex:block/complex_carpet"
+  }
+}

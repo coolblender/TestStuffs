@@ -1,5 +1,6 @@
 package blenderscomplex.jar;
 
+import blenderscomplex.jar.block.ModBlocks;
 import blenderscomplex.jar.item.ModItemGroups;
 import blenderscomplex.jar.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -19,6 +20,7 @@ public class BlendersComplex implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 		LOGGER.info("Hello Fabric world!");
 	}

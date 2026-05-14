@@ -1,0 +1,33 @@
+package blenderscomplex.jar.block;
+
+import blenderscomplex.jar.BlendersComplex;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+
+public class ModBlocks {
+    public static final Block COMPLEX_CARPET = registerBlock("complex_carpet",
+            new Block(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).slipperiness(0.1f).strength(10000000f)));
+
+
+    private static Block registerBlock(String name, Block block) {
+        registerBlock(name, block);
+        return Registry.register(Registries.BLOCK, new Identifier(BlendersComplex.MOD_ID, name), block);
+    }
+
+    private static Item registerBlockItem(String name, Block block) {
+        return Registry.register(Registries.ITEM, new Identifier(BlendersComplex.MOD_ID, name),
+                new BlockItem(block, new FabricItemSettings()));
+    }
+
+    public static void registerModBlocks() {
+
+
+    }
+}

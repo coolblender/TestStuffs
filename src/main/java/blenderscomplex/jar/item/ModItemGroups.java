@@ -1,6 +1,7 @@
 package blenderscomplex.jar.item;
 
 import blenderscomplex.jar.BlendersComplex;
+import blenderscomplex.jar.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -17,6 +18,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.blenderscomplex"))
                     .icon(() -> new ItemStack(ModItems.GROUPICON)).entries((displayContext, entries) -> {
                         entries.add(ModItems.FLASHLIGHT);
+                        entries.add(ModBlocks.COMPLEX_CARPET);
 
                     }).build());
 
