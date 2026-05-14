@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item FLASHLIGHT = registerItem("flashlight", new Item(new FabricItemSettings()));
 
-    private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
+    private static void addItemsToToolsItemGroup(FabricItemGroupEntries entries) {
         entries.add(FLASHLIGHT);
     }
 
@@ -24,6 +24,6 @@ public class ModItems {
     public static void registerModItems() {
         BlendersComplex.LOGGER.info("Registering Mod Items for " + BlendersComplex.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemsToToolsItemGroup);
     }
 }
