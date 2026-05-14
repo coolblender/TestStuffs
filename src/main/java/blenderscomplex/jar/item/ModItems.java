@@ -13,6 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item FLASHLIGHT = registerItem("flashlight", new Item(new FabricItemSettings()));
     public static final Item GROUPICON = registerItem("groupicon", new Item(new FabricItemSettings()));
+    public static final Item FLASHLIGHTON = registerItem("flashlighton", new Item(new FabricItemSettings()));
 
 
     private static Item registerItem(String name, Item item) {

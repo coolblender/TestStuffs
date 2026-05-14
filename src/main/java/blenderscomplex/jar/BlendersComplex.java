@@ -9,7 +9,6 @@ import org.slf4j.LoggerFactory;
 
 public class BlendersComplex implements ModInitializer {
 	public static final String MOD_ID = "blenderscomplex";
-	public static final String MOD_ICON = "blenderscomplex/jar/item/icon.png";
 
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
