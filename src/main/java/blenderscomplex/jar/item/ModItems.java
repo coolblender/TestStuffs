@@ -12,18 +12,16 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item FLASHLIGHT = registerItem("flashlight", new Item(new FabricItemSettings()));
+    public static final Item GROUPICON = registerItem("groupicon", new Item(new FabricItemSettings()));
 
-    private static void addItemsToToolsItemGroup(FabricItemGroupEntries entries) {
-        entries.add(FLASHLIGHT);
-    }
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(BlendersComplex.MOD_ID, name), item);
     }
 
     public static void registerModItems() {
-        BlendersComplex.LOGGER.info("Registering Mod Items for " + BlendersComplex.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemsToToolsItemGroup);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS);
     }
 }
