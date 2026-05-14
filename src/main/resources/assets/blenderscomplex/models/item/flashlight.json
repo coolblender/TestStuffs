@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "item.blenderscomplex.flashlight"
+    "layer0": "blenderscomplex:item/flashlight"
   }
 }
