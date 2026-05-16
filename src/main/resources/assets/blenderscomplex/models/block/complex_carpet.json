@@ -1,6 +1,6 @@
 {
-  "parent": "block/generated",
+  "parent": "block/cube_all",
   "textures": {
-    "layer0": "blenderscomplex:block/complex_carpet"
+    "all": "blenderscomplex:block/complex_carpet"
   }
 }
