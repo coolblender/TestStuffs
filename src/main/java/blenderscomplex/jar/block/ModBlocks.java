@@ -17,7 +17,6 @@ public class ModBlocks {
 
 
     private static Block registerBlock(String name, Block block) {
-        registerBlock(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(BlendersComplex.MOD_ID, name), block);
     }
 
