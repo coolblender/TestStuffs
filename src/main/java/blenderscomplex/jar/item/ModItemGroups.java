@@ -18,6 +18,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.blenderscomplex"))
                     .icon(() -> new ItemStack(ModItems.GROUPICON)).entries((displayContext, entries) -> {
                         entries.add(ModItems.FLASHLIGHT);
+
                         entries.add(ModBlocks.COMPLEX_CARPET);
 
                     }).build());
