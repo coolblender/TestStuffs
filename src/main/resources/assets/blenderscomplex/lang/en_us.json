@@ -5,6 +5,7 @@
   "block.blenderscomplex.complex_carpet": "Complex Carpet",
   "block.blenderscomplex.complex_wall": "Complex Wall",
   "block.blenderscomplex.complex_ceiling": "Complex Ceiling",
+  "block.blenderscomplex.complex_light": "Complex Light",
 
   "itemgroup.blenderscomplex": "Blender's Complex"
 }

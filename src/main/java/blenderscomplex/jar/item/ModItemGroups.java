@@ -22,6 +22,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.COMPLEX_CARPET);
                         entries.add(ModBlocks.COMPLEX_WALL);
                         entries.add(ModBlocks.COMPLEX_CEILING);
+                        entries.add(ModBlocks.COMPLEX_LIGHT);
 
                     }).build());
 
