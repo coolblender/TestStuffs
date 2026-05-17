@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block COMPLEX_CARPET = registerBlock("complex_carpet",
-            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).slipperiness(0.9999999f).strength(-10000000f).sounds(BlockSoundGroup.WOOL)));
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(-10000000f).sounds(BlockSoundGroup.WOOL)));
     public static final Block COMPLEX_WALL = registerBlock("complex_wall",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(-10000000f).sounds(BlockSoundGroup.WOOD)));
     public static final Block COMPLEX_CEILING = registerBlock("complex_ceiling",
