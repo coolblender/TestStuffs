@@ -9,11 +9,16 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block COMPLEX_CARPET = registerBlock("complex_carpet",
-            new Block(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).slipperiness(0.1f).strength(10000000f)));
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).slipperiness(0.9999999f).strength(-10000000f).sounds(BlockSoundGroup.WOOL)));
+    public static final Block COMPLEX_WALL = registerBlock("complex_wall",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(-10000000f).sounds(BlockSoundGroup.WOOD)));
+    public static final Block COMPLEX_CEILING = registerBlock("complex_ceiling",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(-10000000f).sounds(BlockSoundGroup.LODESTONE)));
 
 
     private static Block registerBlock(String name, Block block) {

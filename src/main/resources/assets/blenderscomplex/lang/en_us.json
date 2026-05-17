@@ -3,6 +3,8 @@
   "item.blenderscomplex.flashlighton": "Flashlight",
 
   "block.blenderscomplex.complex_carpet": "Complex Carpet",
+  "block.blenderscomplex.complex_wall": "Complex Wall",
+  "block.blenderscomplex.complex_ceiling": "Complex Ceiling",
 
   "itemgroup.blenderscomplex": "Blender's Complex"
 }

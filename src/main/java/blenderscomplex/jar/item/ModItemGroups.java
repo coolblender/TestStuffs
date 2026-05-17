@@ -20,6 +20,8 @@ public class ModItemGroups {
                         entries.add(ModItems.FLASHLIGHT);
 
                         entries.add(ModBlocks.COMPLEX_CARPET);
+                        entries.add(ModBlocks.COMPLEX_WALL);
+                        entries.add(ModBlocks.COMPLEX_CEILING);
 
                     }).build());
 
